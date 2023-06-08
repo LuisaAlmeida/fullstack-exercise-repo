@@ -3,3 +3,22 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+.review-items {
+  list-style-type: none;
+}
+
+.review-list {
+  width: fit-content;
+}
+
+.table-items{
+  display: flex;
+  justify-content: center;
+}
+
+.line{
+  background-color: #80808029;
+  height: 2px;
+  box-shadow: 5px 5px 5px antiquewhite;
+  
+}

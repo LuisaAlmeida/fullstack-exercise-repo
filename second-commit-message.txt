@@ -1,5 +1,4 @@
-Second commit	
-
+Second commit - logical implementation, more styling & project structure organization	
 
 	1 created a ReviewList.css which renders the visual aspect of the data on the browser
 	2 installed the npm react-icons, this installation reaveled vulnarabilities that were fixed

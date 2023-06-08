@@ -4,6 +4,7 @@
  */
 import React, { useState } from 'react';
 import ReviewItem from './ReviewItem';
+import "../UI/LoadMoreButton.css";
 
 const LoadMoreBrands = ({ reviews }) => {
   const [visibleReviews, setVisibleReviews] = useState([]);

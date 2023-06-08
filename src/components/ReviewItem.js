@@ -10,7 +10,7 @@ import StarRating from "../UI/StarRating";
 import { AiFillCheckCircle } from "react-icons/ai";
 
 const ReviewItem = ({ review }) => {
-  const { logo, terms_and_conditions, play_url } = review;
+  const { logo, play_url } = review;
   const { rating, features } = review.info;
 
   // Renders the features manually and adds the check Icon to each string
@@ -21,7 +21,6 @@ const ReviewItem = ({ review }) => {
     </div>
   ));
 
-  
   /**
    * Renders the layout and content of a review item on the website
    * it has a main 'review-item' container of the div classes corresponding to a specific item within it
@@ -47,7 +46,7 @@ const ReviewItem = ({ review }) => {
           </a>
         </div>
        
-        <div className="terms">  
+        <div className="terms_and_conditions">  
           <span dangerouslySetInnerHTML={{ __html: review.terms_and_conditions }} />
         </div>
       </div>

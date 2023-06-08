@@ -49,17 +49,19 @@ const ReviewList = () => {
 
 
   /**
-   * returns each review property to be displayed on the webpage
+   * returns each review to be displayed on the webpage
    */
   return (
     <div className="ReviewsList">
       <div className="line"></div>
+      <div class="table-items"> 
       <ul className="review-items">
-        {visibleReviews.map((review) => (<li key={review.brand_id} className="review-item">
+        {visibleReviews.map((review) => (<li key={review.brand_id} className="review-list">
             <ReviewItem review={review}/>
           </li>
         ))} <LoadMoreBrands reviews={reviews} />
       </ul>   
+      </div>
     </div>
   );
 };

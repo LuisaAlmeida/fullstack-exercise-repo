@@ -1,0 +1,44 @@
+Third commit. 
+This commit was all about css implementations so that the website visual style is closer to the image example on the instructions pdf file
+
+
+1.ReviewItem.css
+I did not created any new css selectors, but added & changed properties.
+ On the .review-item I added {
+ 	padding: 20px;
+	border-style: solid;
+	border-color: #80808029;
+	align-items: center;
+	justify-content: center; }
+
+ On the .features I added {
+ 	width: 350px;
+ 	justify-content: center;  }
+ 
+ On the .play-now-terms-container {
+	align-items: center;
+ }
+ 
+ On the .play-now-terms-container {
+	align-items: center;
+ }
+ 
+ On the .play-now I changed the { 
+ 	padding: 20px 20px; TO padding: 20px 40px;}
+ 	& added  {width: fit-content;}
+ 
+ 
+2. ReviewList.css
+On this css file I created the .review-items class
+I added the .review-list to style the className="review-list" with "width: fit-content;" so that the display looks more organized
+I added the .table-items to style the <div class="table-items"> with "display: flex;" &
+	"justify-content: center;" so that all the reviews display are all centered on the webpage
+The Line css was implemented so that the visual of the <div className="line"></div>is more simillar to
+	the one of the PDF intructions image. The box shadow property was my way to create a subtle shadow effect around the line
+
+
+3. LoadMoreButton.css
+These implementations aimed to center the button correctly & adding additional color, font-weight and width
+On the .load-more-container I added "justify-content: center;"
+On the .load-more-button I updated the "padding from 20px 20px" to "15px 20px", updated the "width from 300px" to "fit-content"	
+	&& added font-size: 18px; color: white; font-weight: bold; border: none;
