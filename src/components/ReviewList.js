@@ -4,25 +4,29 @@
  * Was not sure what HTTP library to use, so ended up using fetch.
  */
 import { useEffect, useState } from "react";
+import "./ReviewList.css";
+import ReviewItem from "./ReviewItem";
+import LoadMoreBrands from "./LoadMoreBrands";
 
 const ReviewList = () => {
   const [reviews, setReviews] = useState([]);
-
+  
+  /**
+   * first useEffect hook to fetch the reviews from the API endpoint
+   * & updating the reviews state
+   */
   useEffect(() => {
     const fetchReviews = async () => {
       try {
-
-        /**
-         * fetch function sends HTTP GET request to the API endpoint.
-         * awaits the response from the API & stores the data
-         * parses the data & stores it in the const parsedData
-         * checks if key data property equals to "hub..", if true sets reviews state
-         */
-        const data = await fetch("http://localhost/wordpress/wp-json/luisa-fullstack-exercise/v1/reviews");
+        const data = await fetch(
+          "http://localhost/wordpress/wp-json/luisa-fullstack-exercise/v1/reviews"
+        );
         const parsedData = await data.json();
         console.log(parsedData);
         setReviews(
-          parsedData.key === "hub_toplists_order" ? parsedData.toplists["575"] : []
+          parsedData.key === "hub_toplists_order"
+            ? parsedData.toplists["575"]
+            : []
         );
       } catch (error) {
         console.error("This Error is Ocurring: ", error);
@@ -32,26 +36,30 @@ const ReviewList = () => {
     fetchReviews();
   }, []);
 
+   /**
+   * second useEffect hook to set the initial visible reviews
+   * while setting it to 3, the user, when opening the browser, will see the first 3
+   */
+  const [visibleReviews, setVisibleReviews] = useState([]);
+  useEffect(() => {
+    if (reviews.length > 0) {
+      setVisibleReviews(reviews.slice(0, 3));
+    }
+  }, [reviews]);
+
+
   /**
-   * returns the review list to be displayed on the webpage
-   * list includes the review's necessary info for the user to interact with
+   * returns each review property to be displayed on the webpage
    */
   return (
-    <div class="Reviews List">
-      <h1>Luisa Full Stack Exercise</h1>
-      <ul>
-        {reviews.map((review) => (
-          <li key={review.brand_id}>
-            <img src={review.logo} alt={review.brand_id} />
-            <div>
-              <h2>Rating: {review.info.rating}</h2>
-              <p>Features: {review.info.features.join(", ")}</p>
-              <p>Terms and Conditions: {review.terms_and_conditions}</p>
-              <a href={review.play_url}>PLAY NOW</a>
-            </div>
+    <div className="ReviewsList">
+      <div className="line"></div>
+      <ul className="review-items">
+        {visibleReviews.map((review) => (<li key={review.brand_id} className="review-item">
+            <ReviewItem review={review}/>
           </li>
-        ))}
-      </ul>
+        ))} <LoadMoreBrands reviews={reviews} />
+      </ul>   
     </div>
   );
 };

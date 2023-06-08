@@ -1,0 +1,25 @@
+.load-more-container {
+    display: flex;
+    text-decoration-color: #ccc;
+}
+
+.load-more-button {
+    text-decoration-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(35, 121, 35);
+    padding: 20px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 300px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.4));
+    background: linear-gradient(to bottom, rgb(35, 121, 35), rgb(26, 92, 26));
+  }
+  
+.load-more-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}

@@ -1,0 +1,21 @@
+/**
+ StarRating style
+ */
+
+.stars .star {
+  color: #edd850;
+  font-size: 20px; /* Adjust the star size as desired */
+}
+
+
+.star {
+  color: #edd850;
+  margin-right: 4px;
+}
+
+
+.star.empty {
+  color: #edd850;
+  fill: none;
+  stroke-width: 60px;
+}
