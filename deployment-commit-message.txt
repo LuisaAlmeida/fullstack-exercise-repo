@@ -1,0 +1,18 @@
+Bug Fixing & testing commit + Hosting the application
+
+1-development server running fine & lauching the application on the browzer at http://localhost:3000
+2-interacted with the application on different browsers, & tested the different buttons & functionalities, looked for warnings on the browsers console
+	i. ReviewList.js replaced <div class="table-items"> to <div className="table-items">
+4-TODO the website display is not working well on mobile devices
+
+
+Hosting the application
+
+1- created the deplyoment branch to host the application github web page, and commited the changes
+2- on GitHub web I configured github pages Source: Deploy from branch && Branch: deployment
+3 - I have tested the URL of the app, it opens but the page is blank. Then I've realized that before creating the branch the privacy of the project was still set as "private"
+4 - // TODO change the json properties so that the homepage contains the appropriate URL address
+
+Note that this stage of the projects was about testing and fixing the app. On desktop devices everying is working fine, but not on mobile devices.
+It also has the first approach of trying to host the application, but since I forgot to set the repo to public, the url wasn't working well.
+I have decided that the next step will be to create a new branch dedicated to fixing the data in order to host the application on a github page.
