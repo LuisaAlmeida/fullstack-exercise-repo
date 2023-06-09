@@ -5,6 +5,9 @@
 
 .review-items {
   list-style-type: none;
+  @media (max-width:768px) {
+    padding: 5px;
+  } 
 }
 
 .review-list {
@@ -20,5 +23,4 @@
   background-color: #80808029;
   height: 2px;
   box-shadow: 5px 5px 5px antiquewhite;
-  
-}
+  }

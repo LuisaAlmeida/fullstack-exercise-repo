@@ -22,7 +22,7 @@ const LoadMoreBrands = ({ reviews }) => {
       const nextReviews = reviews.slice(0, nextIndex);
       setVisibleReviews(nextReviews);
       setIsLoading(false);
-    }, 2000); // when the user clicks the button this Simulates a delay of 2 seconds
+    }, 1000); // when the user clicks the button this Simulates a delay of 1 seconds
   };
 
   /**
