@@ -11,8 +11,7 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.9.0",
     "react-scripts": "^5.0.1",
-    "web-vitals": "^2.1.4",
-    "nth-check": ">=2.0.1"
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,7 +41,6 @@
     "@babel/plugin-proposal-private-property-in-object": "version",
     "@babel/preset-env": "^7.22.4",
     "@babel/preset-react": "^7.22.3",
-    "babel-jest": "^29.5.0",
-    "nth-check": ">=2.0.1"
+    "babel-jest": "^29.5.0"
   }
 }
