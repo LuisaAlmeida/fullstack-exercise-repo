@@ -54,10 +54,11 @@ const ReviewList = () => {
   return (
     <div className="ReviewsList">
       <div className="line"></div>
-      <div class="table-items"> 
-      <ul className="review-items">
-        {visibleReviews.map((review) => (<li key={review.brand_id} className="review-list">
-            <ReviewItem review={review}/>
+      <div className="table-items"> 
+        <ul className="review-items">
+          {visibleReviews.map((review) => (
+            <li key={review.brand_id} className="review-list">
+              <ReviewItem review={review}/>
           </li>
         ))} <LoadMoreBrands reviews={reviews} />
       </ul>   
