@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.f0798d8e.css",
-    "main.js": "/static/js/main.565bc73a.js",
-    "static/js/787.6d7a06af.chunk.js": "/static/js/787.6d7a06af.chunk.js",
-    "index.html": "/index.html",
-    "main.f0798d8e.css.map": "/static/css/main.f0798d8e.css.map",
-    "main.565bc73a.js.map": "/static/js/main.565bc73a.js.map",
-    "787.6d7a06af.chunk.js.map": "/static/js/787.6d7a06af.chunk.js.map"
+    "main.css": "/fullstack-exercise-repo/static/css/main.dbb80e01.css",
+    "main.js": "/fullstack-exercise-repo/static/js/main.e89a7f1b.js",
+    "static/js/787.c9d7f2bc.chunk.js": "/fullstack-exercise-repo/static/js/787.c9d7f2bc.chunk.js",
+    "index.html": "/fullstack-exercise-repo/index.html",
+    "main.dbb80e01.css.map": "/fullstack-exercise-repo/static/css/main.dbb80e01.css.map",
+    "main.e89a7f1b.js.map": "/fullstack-exercise-repo/static/js/main.e89a7f1b.js.map",
+    "787.c9d7f2bc.chunk.js.map": "/fullstack-exercise-repo/static/js/787.c9d7f2bc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f0798d8e.css",
-    "static/js/main.565bc73a.js"
+    "static/css/main.dbb80e01.css",
+    "static/js/main.e89a7f1b.js"
   ]
 }
